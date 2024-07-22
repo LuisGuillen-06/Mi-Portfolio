@@ -1,0 +1,407 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    color: #fcf2f2;
+}
+body {
+    background-image:url('img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    font-optical-sizing: auto;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: whitesmoke;
+    padding: 1em 0;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f6f6f6; /* Color blanco */
+    transition: all 0.3s ease;
+    font-size: 18px;
+    text-shadow: 10px 10px 45px rgb(241, 6, 6);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(227, 65, 65); /* Color de hover */
+    transform: scale(1.1);
+    text-shadow: 10px 10px 35px rgb(218, 40, 40); /* Efecto de sombra de texto en hover */
+}
+
+.imagenPerfil img{
+    width: 400px;
+    height: auto;
+    border-radius: 10%;
+    margin: 10px 150px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.6));
+    margin-top: -80px;
+
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     /* Ajusta la altura mínima según sea necesario */
+    /* Ajusta el padding superior para mover la sección hacia arriba */
+    
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.imagenPerfil{
+    margin: 0 40px;
+}
+
+.textoPerfil h2, .imagenPerfil, .textoPerfil p{
+   opacity: 0;
+    animation: fadeIn 2s forwards;
+    text-shadow: 0 0 25px rgb(213, 38, 38);
+    
+}
+
+.textoPerfil h2 {
+    animation-delay: 0.8s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.textoPerfil p {
+    animation-delay: 1.3s;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+#about{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    
+
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 550;
+        font-size: 40px;
+        text-shadow: 0 0 25px rgb(213, 38, 38);
+        margin-top: 30px;
+    }
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 1px;
+    
+
+    h5 {
+        text-shadow: 0 0 25px rgb(213, 38, 38);
+        font-size: 25px;
+        font-weight: 550;
+    }
+    p {
+        text-shadow: 0 0 25px rgb(213, 38, 38);
+        font-size: 16px;
+    }
+}
+
+#about img {
+    padding-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+#about p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 19px;
+    text-shadow: 0 0 25px rgba(109, 22, 22, 0.959);
+    font-weight: 450;
+}
+
+.card-body {
+    background-color:rgba(27, 12, 12, 0.832)
+}
+
+/* styles.css */
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Puedes ajustar esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border: solid 1px;
+}
+
+#projects h2 { 
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+    text-shadow: 0 0 25px rgb(213, 38, 38);
+    margin-top: 30px;
+}
+
+#projects .card {
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    
+}
+
+.card-text {
+    font-size: 1rem;
+    
+}
+
+.modal-header {
+    background-color: #0d3054;
+    
+}
+.modal-body {
+    font-family: 'Roboto',sans-serif;
+    color: #2b5f92;
+
+    .textModal {
+        color: #0d3054;
+        font-weight: 10px;
+    }
+
+    ul {
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0 20px; /* Espaciado interno */
+        margin: 0; /* Elimina el margen externo */
+        border-left: 2px solid #007bff; /* Línea decorativa a la izquierda */
+        background-color: #fff; /* Fondo blanco para la lista */
+    }
+
+    li, strong {
+        margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+        font-size: 16px; /* Tamaño de fuente */
+        color: #333; /* Color del texto */
+        display: flex;
+        align-items: center; /* Centra el contenido verticalmente */
+    }
+
+    li::before {
+        content: "•"; /* Punto decorativo */
+        color: #007bff; /* Color del punto */
+        font-size: 20px; /* Tamaño del punto */
+        margin-right: 10px; /* Espacio entre el punto y el texto */
+        display: inline-block;
+    }
+}
+
+.card {
+    border: 2px solid transparent; /* Establece un borde transparente para el efecto de sombra */
+    box-shadow: 0 0 10px rgba(60, 59, 55, 0.8), 0 0 20px rgba(63, 63, 61, 0.6), 0 0 30px rgba(29, 29, 28, 0.4); /* Ajusta el color y el tamaño del resplandor */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave en el hover */
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgb(58, 4, 4), 0 0 25px rgba(119, 6, 6, 0.8), 0 0 35px rgba(114, 6, 6, 0.777);
+}
+#social-links .btn {
+    margin: 5px;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;  
+}
+
+#social-links .btn i {
+    margin-right: 8px;
+}
+
+#social-links h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 30px;
+    text-shadow: 0 0 25px rgb(213, 38, 38);
+    margin-top: 30px;
+}
+
+.boton-project { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .btn{
+        margin: 0;
+    }
+}
+
+.d-none {
+    display: none;
+  }
+  
+.tech-logos-container .el {
+    display: inline-block;
+    margin: 5px;
+    font-size: 2em;
+
+}
+
+
+#PetZone {
+    font-size: 0.8em;
+}
+
+/* Ajusta el tamaño del texto en el modal */
+.modal-body .textModal {
+    font-size: 0.8em; /* Ajusta según sea necesario */
+}
+
+.modal-body ul {
+
+    font-size: 0.9em;
+    
+    li{
+        font-size: 0.9em;
+    }
+}
+
+.modal-content {
+    padding: 10px; /* Ajusta el padding para una mejor presentación en un modal más pequeño */
+}
+
+/* Estilos para la sección Habilidades */
+#habilidades {
+    background-color: transparent;
+    
+
+    .skill-item {
+        background-color: #f6d9d9;
+        padding: 5px; /* Aumenta el padding para más espacio alrededor del ícono */
+        border-radius: 10px;
+        margin:0;
+        box-shadow: 0 0 10px rgba(239, 236, 236, 0.964);
+        transition: transform 0.3s;
+    }
+    
+    .skill-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .skill-icon {
+        font-size: 2em; /* Ajusta el tamaño del ícono */
+    }
+    
+    .skill-item i.fab.fa-github {
+        color: #333; /* Cambia el color del ícono de GitHub */
+    }
+    h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+    text-shadow: 0 0 25px rgb(213, 38, 38);
+    }
+
+    h5 {
+        color: #020101;
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 550;
+        font-size: 30px;
+        text-shadow: 0 10px 25px rgb(239, 8, 8);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .list-group-item{
+        background-color: #f6d9d9;
+        color: #333333;
+        font-weight: 550;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Estilos para los mensajes de error */
+.form-text.text-danger {
+    display: none;
+}
+
+footer p {
+    font-size: 17px;
+    font-weight: 550;
+}
+/* Asegura que las dos columnas estén alineadas en la misma altura */
+@media (min-width: 768px) {
+    .col-md-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente */
+    }
+    
+    .row {
+        align-items: stretch; /* Asegura que las columnas tengan la misma altura */
+    }
+}
+
+#contact {
+    margin-bottom: 30px;
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 550;
+        font-size: 30px;
+        text-shadow: 0 10px 25px rgb(239, 8, 8);
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    #home {
+        flex-direction: column;
+    }
+
+    .textoPerfil, .imagenPerfil {
+        margin: 10px 0; /* Ajustar margen para columnas en pantallas pequeñas */
+        
+    }
+}
+
+@media (min-width: 992px) {
+    #home {
+        flex-direction: row;
+    }
+
+    .textoPerfil, .imagenPerfil {
+        margin: 0 50px; /* Ajustar margen para columnas en pantallas grandes */
+        
+    }
+}
+
