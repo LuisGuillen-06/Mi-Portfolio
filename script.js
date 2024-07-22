@@ -34,7 +34,7 @@ document.getElementById('descargarPDF').addEventListener('click',function(event)
     event.preventDefault(); 
 
     var link = document.createElement('a');
-    link.href = '/CV.pdf';
+    link.href = 'CV.pdf';
     link.download = 'LuisFelipeGuillenMarquez.pdf'
 
     document.body.appendChild(link);
