@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="img/imgF.jpg">
+    <title>Portafolio de Luis Felipe Guillén Márquez</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <p><i class="fa-solid fa-laptop-code fa-2xl"></i></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="home">
+            <div class="home d-flex flex-column flex md-row align-items-center">
+                <div class="textoPerfil mt-5 reveal">
+                    <h2 class="display-4" id="WelcomeText">Bienvenido a mi Portfolio  <i class="fa-solid fa-book fa-bounce fa-sm"></i></h2>
+                    <p class="lead" id="introText">Hola <i class="fa-solid fa-face-grin-wide fa-bounce fa-fade fa-sm" style="color: #FFD43B;"></i> !! , soy Luis Felipe Guillén Márquez, estudiante de Técnico Superior en Análisis de Sistemas, actualmente estoy cursando mi tercer año, con 28 materias aprobadas de 34, tengo un gran interés por el desarrollo web y la tecnología. Estoy en camino hacia mi graduación y busco aplicar mis conocimientos en proyectos innovadores y desafiantes.</p>
+                </div>
+                <div class="imagenPerfil reveal">
+                    <img src="img/imgperfiltransparente.png" alt="Imagen de Perfil" class="reveal">
+                </div>
+            </div>
+        </section>
+
+        <section id="social-links" class="mt-5">
+            <div class="container text-center">
+                <h3 class="display-5 reveal">"Conéctate y Conoce Más"</h3>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-3 mb-2 m">
+                        <a href="https://www.linkedin.com/in/luis-felipe-guillen-marquez/" target="_blank" class="btn btn-outline-primary btn-block">
+                            <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a href="https://github.com/luisguillen-06" target="_blank" class="btn btn-outline-dark btn-block">
+                            <i class="fab fa-github fa-2x"></i> GitHub
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <a href="#" target="_blank" class="btn btn-outline-info btn-block" id="descargarPDF">
+                            <i class="fas fa-file-download fa-2x"></i>Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section id="about" class="mt-4">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6 reveal">
+                        <h2 class="display-4 reveal mb-2">Sobre mí <i class="fa-solid fa-user-tie fa-bounce fa-xs"></i></h2>
+                        <p>
+                            Soy un estudiante entusiasta de la carrera <strong>Técnico Superior en Análisis de Sistemas</strong>, con un
+                            enfoque en el desarrollo <strong> Web/ software</strong>. Me he dedicado a adquirir habilidades y conocimientos
+                            en tecnologías como C#/ .NET, Python/Django/Flask, HTML, CSS, JavaScript, SQLServer,
+                            MySQL y GitHub, tanto a través de proyectos personales como de mi formación académica.
+                            Actualmente, estoy buscando oportunidades como desarrollador de software, con el objetivo
+                            de aplicar mis habilidades y conocimientos en un entorno desafiante y gratificante. Mi meta a
+                            corto plazo es continuar creciendo profesionalmente, aprender nuevas tecnologías y
+                            contribuir al éxito de un equipo dinámico y colaborativo.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center reveal">
+                        <img src="img/imgSobremi.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <section id="projects" class="mt-4">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5 mr-4 reveal">Mis Proyectos <i class="fa-solid fa-file-code"></i></h2>
+            <div class="row">
+                <!-- Primera tarjeta -->
+                <div class="col-md-6 mb-5 text-center">
+                    <div class="card">
+                        <img src="img/Calculadora.png" class="card-img-top" alt="Proyecto 1 Calculadora">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculadora Básica</h5>
+                            <button type="button" class="btn btn-outline-primary ver-detalle-btn mb-2 btn-md" data-toggle="modal" data-target="#proyecto1Modal">
+                                Ver Detalles
+                            </button>
+                            <button type="button" class="btn btn-outline-info mb-2 btn-md tecnologias-btn" data-project="project1">
+                                Tecnologías
+                            </button>
+                            <div class="tech-logos-container property-keyframes-demo d-none" data-project="project1">
+                                <div class="el" data-x="50"> <i class="devicon-html5-plain colored"></i></div>
+                                <div class="el" data-x="80"><i class="devicon-css3-plain colored"></i></div>
+                                <div class="el" data-x="120"><i class="devicon-javascript-plain colored"></i></div>
+                                <!-- Añade más logos según sea necesario -->
+                            </div>
+                            <p class="card-text">Aplicación web de calculadora desarrollada con HTML, CSS y JavaScript. Ofrece operaciones básicas y una interfaz intuitiva.</p>
+                            <!-- Botón para abrir el modal -->
+                            <div class="mt-2">
+                                <a href="https://github.com/LuisGuillen-06/Calculadora" class="btn btn-outline-info mr-5" target="_blank">
+                                    <i class="fa-solid fa-code-branch fa-lg"></i>
+                                </a>
+                                <a href="https://luisguillen-06.github.io/Calculadora/" class="btn btn-outline-success" target="_blank">
+                                    <i class="fas fa-external-link-alt fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para Proyecto 1 -->
+                <div class="modal fade" id="proyecto1Modal" tabindex="-1" aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="proyecto1ModalLabel">Calculadora Básica</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body descripcion">
+                                <p class="textModal"><strong>Descripción:</strong> Esta calculadora básica permite realizar operaciones matemáticas fundamentales como suma, resta, multiplicación y división. Ha sido desarrollada utilizando HTML para la estructura, CSS para el estilo, y JavaScript para la funcionalidad.</p>
+                                <p class="textModal"><strong>Objetivos:</strong> Proporcionar una herramienta sencilla para realizar cálculos básicos en una interfaz amigable y accesible.</p>
+                                <p class="textModal"><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                                <p class="textModal"><strong>Características:</strong> 
+                                    <ul>
+                                        <li>Interfaz intuitiva y fácil de usar.</li>
+                                        <li>Soporte para operaciones matemáticas básicas.</li>
+                                        <li>Diseño responsivo para adaptarse a diferentes dispositivos.</li>
+                                    </ul>
+                                </p>
+                                <p class="textModal"><strong>Desafíos:</strong> Asegurar que la interfaz sea clara y funcional en dispositivos de diferentes tamaños y solucionar problemas de redondeo en los cálculos.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda tarjeta -->
+                <div class="col-md-6 mb-4 text-center">
+                    <div class="card">
+                        <img src="img/appclima.png" class="card-img-top" alt="Proyecto Clima en Tu Lugar">
+                        <div class="card-body">
+                            <h5 class="card-title">Clima en Tu Lugar</h5>
+                            <button type="button" class="btn btn-outline-primary ver-detalle-btn mb-2 btn-md" data-toggle="modal" data-target="#proyecto2Modal">
+                                Ver Detalles
+                            </button>
+                            <button type="button" class="btn btn-outline-info mb-2 btn-md tecnologias-btn" data-project="project2">
+                                Tecnologías
+                            </button>
+                            <div class="tech-logos-container property-keyframes-demo d-none" data-project="project2">
+                                <div class="el" data-x="50"> <i class="devicon-html5-plain colored"></i></div>
+                                <div class="el" data-x="80"><i class="devicon-css3-plain colored"></i></div>
+                                <div class="el" data-x="120"><i class="devicon-javascript-plain colored"></i></div>
+                                <!-- Añade más logos según sea necesario -->
+                            </div>
+                            <p class="card-text">Aplicación web que brinda información sobre el clima actual en tu ubicación.</p>
+                            <!-- Botón para abrir el modal -->
+                            <div class="mt-2">
+                                <a href="https://github.com/LuisGuillen-06/app-clima" class="btn btn-outline-info mr-5" target="_blank">
+                                    <i class="fa-solid fa-code-branch fa-lg"></i>
+                                </a>
+                                <a href="https://luisguillen-06.github.io/app-clima/" class="btn btn-outline-success" target="_blank">
+                                    <i class="fas fa-external-link-alt fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Modal para Proyecto 2 -->
+                <div class="modal fade" id="proyecto2Modal" tabindex="-1" aria-labelledby="proyecto2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="proyecto2ModalLabel">Clima en tu Lugar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="textModal"><strong>Descripción:</strong> Esta aplicación simple te brinda información sobre el clima actual en tu ubicación, mostrando la temperatura, presión atmosférica, humedad relativa y una descripción del clima actual.</p>
+                            <p class="textModal"><strong>Funcionalidades:</strong> 
+                                <ul>
+                                    <li>Muestra la temperatura actual.</li>
+                                    <li>Muestra la presión atmosférica.</li>
+                                    <li>Muestra la humedad relativa.</li>
+                                    <li>Proporciona una descripción del clima actual.</li>
+                                </ul>
+                            </p>
+                            <p class="textModal"><strong>Requisitos:</strong> 
+                                <ul>
+                                    <li>Conexión a Internet para obtener los datos del clima.</li>
+                                    <li>Permiso del navegador para acceder a la ubicación del usuario.</li>
+                                </ul>
+                            </p>
+                            <p class="textModal"><strong>API Utilizada:</strong> La aplicación utiliza la API de OpenWeatherMap para obtener la información del clima.</p>
+                            <p class="textModal"><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                        </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 mt-3 text-center">
+                    <div class="card">
+                        <img src="img/BlogTigre.png" class="card-img-top" alt="Proyecto 3 Blog-de-Tigre">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog de la localidad El Tigre</h5>
+                            <button type="button" class="btn btn-outline-primary ver-detalle-btn mb-2 btn-md" data-toggle="modal" data-target="#proyecto3Modal">
+                                Ver Detalles
+                            </button>
+                            <button type="button" class="btn btn-outline-info mb-2 btn-md tecnologias-btn" data-project="project3">
+                                Tecnologías
+                            </button>
+                            <div class="tech-logos-container property-keyframes-demo d-none" data-project="project3">
+                                <div class="el" data-x="50"> <i class="devicon-html5-plain colored"></i></div>
+                                <div class="el" data-x="80"><i class="devicon-css3-plain colored"></i></div>
+                                <div class="el" data-x="120"><i class="devicon-javascript-plain colored"></i></div>
+                                <div class="el" data-x="160"><i class="devicon-bootstrap-plain colored"></i></div>
+                                <!-- Añade más logos según sea necesario -->
+                            </div>
+                            <p class="card-text">Proyecto colaborativo para crear un blog sobre la localidad El Tigre, destacando su historia y lugares de interés.</p>
+                            <!-- Botón para abrir el modal -->
+                            <div class="mt-2">
+                                <a href="https://github.com/Sol-Zito/Blog-de-Tigre" class="btn btn-outline-info mr-5" target="_blank">
+                                    <i class="fa-solid fa-code-branch fa-lg"></i>
+                                </a>
+                                <a href="https://sol-zito.github.io/Blog-de-Tigre/" class="btn btn-outline-success" target="_blank">
+                                    <i class="fas fa-external-link-alt fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para Proyecto 3 -->
+                <div class="modal fade" id="proyecto3Modal" tabindex="-1" aria-labelledby="proyecto3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="proyecto3ModalLabel">Blog de la localidad El Tigre</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body descripcion">
+                                <p class="textModal"><strong>Descripción:</strong>Proyecto colaborativo que destaca la historia, cultura y lugares de interés de esta región. El objetivo es proporcionar a los residentes y visitantes una fuente de información detallada y atractiva sobre la localidad.</p>
+                                <p class="textModal"><strong>Objetivos:</strong> Crear una plataforma informativa sobre El Tigre.
+                                    Promover el turismo y el conocimiento cultural de la región.
+                                    Ofrecer información histórica y actualizada sobre eventos y lugares de interés.</p>
+                                <p class="textModal"><strong>Características:</strong> 
+                                    <ul>
+                                        <li>Secciones dedicadas a la historia, cultura y eventos de El Tigre.</li>
+                                        <li>Galería de imágenes de lugares destacados de la localidad.</li>
+                                        <li>Integración de videos y contenido multimedia para una experiencia enriquecedora.</li>
+                                    </ul>
+                                </p>
+                                <p class="textModal"><strong>Participación:</strong> Este proyecto fue desarrollado en colaboración con dos compañeras, quienes contribuyeron significativamente en la recopilación de información, desarrollo de contenido y diseño del blog.</p>
+                                <p class="textModal"><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript y Bootstrap</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mb-4 mt-3 text-center">
+                    <div class="card">
+                        <img src="img/tiendamascotas.png" class="card-img-top" alt="Proyecto 4 Tienda de Mascotas">
+                        <div class="card-body">
+                            <h5 class="card-title">PetZone - Tienda de Mascotas</h5>
+                            <button type="button" class="btn btn-outline-primary ver-detalle-btn mb-2 btn-md" data-toggle="modal" data-target="#proyecto4Modal">
+                                Ver Detalles
+                            </button>
+                            <button type="button" class="btn btn-outline-info mb-2 btn-md tecnologias-btn" data-project="project4">
+                                Tecnologías
+                            </button>
+                            <div class="tech-logos-container property-keyframes-demo d-none" data-project="project4" id="PetZone">
+                                <div class="el" data-x="50"> <i class="devicon-html5-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-css3-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-javascript-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-bootstrap-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-mysql-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-python-plain colored"></i></div>
+                                <div class="el" data-x="50"><i class="devicon-flask-original colored"></i></div>
+                                
+                                <!-- Añade más logos según sea necesario -->
+                            </div>
+                            <p class="card-text">Proyecto de tienda de mascotas con frontend y backend. Utiliza Python, Flask y MySQL para el ABM de productos.</p>
+                            <!-- Botón para abrir el modal -->
+                            <div class="mt-2">
+                                <a href="https://github.com/LuisGuillen-06/PetZone" class="btn btn-outline-info btn-md mr-5" target="_blank">
+                                    <i class="fa-solid fa-code-branch fa-lg"></i>
+                                </a>
+                                <a href="https://luis0611.pythonanywhere.com/" class="btn btn-outline-success btn-md" target="_blank">
+                                    <i class="fas fa-external-link-alt fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal para Proyecto 4 -->
+                <div class="modal fade" id="proyecto4Modal" tabindex="-1" aria-labelledby="proyecto4ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="proyecto4ModalLabel">PetZone - Tienda de Mascotas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body descripcion">
+                                <p class="textModal"><strong>Descripción:</strong>Proyecto colaborativo de tienda de mascotas realizado en el curso "Codo a Codo". Incluye desarrollo frontend y backend utilizando Python con Flask y MySQL para gestionar el ABM de productos.</p>
+                                <p class="textModal"><strong>Objetivos:</strong> 
+                                    <ul>
+                                        <li>Crear una plataforma de gestión de productos para una tienda de mascotas.</li>
+                                        <li>Facilitar la administración y actualización de inventarios.</li>
+                                        <li>Proporcionar una interfaz amigable para los usuarios.</li>
+                                    </ul>
+                                </p>
+                                <p class="textModal"><strong>Características:</strong> 
+                                    <ul>
+                                        <li>Gestión de productos (alta, baja, modificación).</li>
+                                        <li>Integración con base de datos MySQL.</li>
+                                        <li>Diseño responsivo con Bootstrap.</li>
+                                        <li>Interfaz intuitiva para facilitar la navegación y administración.</li>
+                                    </ul>
+                                </p>
+                                <p class="textModal"><strong>Participación:</strong>Este proyecto fue desarrollado en colaboración con dos compañeras en el curso "Codo a Codo", quienes contribuyeron significativamente en la implementación de funcionalidades y el diseño del sistema.</p>
+                                <p class="textModal"><strong>Tecnologías Utilizadas:</strong>HTML, CSS, JavaScript, Bootstrap, Python, Flask, MySQL.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="py-5 reveal mt-4">
+            <div class="container">
+                <h2 class="text-center mb-4">Competencias <i class="fas fa-puzzle-piece"></i></h2>
+                <div class="row">
+                    <!-- Habilidades Técnicas -->
+                    <div class="col-md-6">
+                        <h3 class="text-center mb-4">Habilidades Técnicas</h3>
+                        <div class="row">
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-html5-plain colored skill-icon"></i>
+                                    <h5>HTML</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-css3-plain colored skill-icon"></i>
+                                    <h5>CSS</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-javascript-plain colored skill-icon"></i>
+                                    <h5>JavaScript</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-bootstrap-plain colored skill-icon"></i>
+                                    <h5>Bootstrap</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-python-plain colored skill-icon"></i>
+                                    <h5>Python</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-django-plain colored skill-icon"></i>
+                                    <h5>Django</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-flask-original colored skill-icon"></i>
+                                    <h5>Flask</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-csharp-plain colored skill-icon"></i>
+                                    <h5>C# (.NET)</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-mysql-plain colored skill-icon"></i>
+                                    <h5>MySQL</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-microsoftsqlserver-plain colored skill-icon"></i>
+                                    <h5>SQL Server</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="devicon-git-plain colored skill-icon"></i>
+                                    <h5>Git</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center mb-4">
+                                <div class="skill-item">
+                                    <i class="fab fa-github skill-icon"></i>
+                                    <h5>GitHub</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Habilidades Blandas -->
+                    <div class="col-md-6">
+                        <h3 class="text-center mb-4">Habilidades Blandas</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">Comunicación Efectiva</li>
+                            <li class="list-group-item">Trabajo en Equipo</li>
+                            <li class="list-group-item">Iniciativa</li>
+                            <li class="list-group-item">Adaptabilidad</li>
+                            <li class="list-group-item">Pensamiento Crítico</li>
+                            <li class="list-group-item">Responsabilidad</li>
+                            <li class="list-group-item">Gestión del Tiempo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-3 reveal">
+            <div class="container">
+                <div class="row">
+                    <!-- Información de Contacto -->
+                    <div class="col-md-6">
+                        <h2>Información de Contacto</h2>
+                        <p>Si tienes alguna pregunta, solicitud de información o</p>
+                        <p>comentario, no dudes en ponerte en contacto.</p>
+                        <p><i class="fa-solid fa-envelope"></i>  luisfgm0611@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> (+54)  1131854687</p>
+                        <p><i class="fa-solid fa-location-dot"></i>  CABA, Argentina</p>
+                    </div>
+        
+                    <!-- Formulario de Contacto -->
+                    <div class="col-md-6">
+                        <h2>Envíame un Mensaje</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+                                <small id="nameError" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="tuemail@ejemplo.com" required>
+                                <small id="emailError" class="form-text text-danger"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                                <small id="messageError" class="form-text text-danger"></small>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-outline-primary btn-lg">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+    </main>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 | Luis Felipe Guillén Márquez</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
