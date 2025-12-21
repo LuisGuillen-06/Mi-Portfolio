@@ -180,84 +180,93 @@
                     <!-- Primera tarjeta -->
                     <div class="col-md-6 mb-5 text-center">
                         <div class="card">
-                            <img src="img/Calculadora.png" class="card-img-top" alt="Proyecto 1 Calculadora">
+                            <img src="img/img_C_N_CAPAS.png" class="card-img-top" alt="Gestor de Empleados C#">
                             <div class="card-body">
-                                <h5 class="card-title" data-lang-key="project1_title">Calculadora Básica</h5>
+                                <h5 class="card-title" data-lang-key="projectCSharp_title">Gestor de Empleados N-Capas</h5>
+
                                 <button type="button" class="btn btn-outline-primary ver-detalle-btn mb-2 btn-md"
-                                    data-toggle="modal" data-target="#proyecto1Modal" data-lang-key="btn_details">
+                                    data-toggle="modal" data-target="#proyectoCSharpModal" data-lang-key="btn_details">
                                     Ver Detalles
                                 </button>
+
                                 <button type="button" class="btn btn-outline-info mb-2 btn-md tecnologias-btn"
-                                    data-project="project1" data-lang-key="btn_tech">
+                                    data-project="projectCSharp" data-lang-key="btn_tech">
                                     Tecnologías
                                 </button>
-                                <div class="tech-logos-container property-keyframes-demo d-none"
-                                    data-project="project1">
-                                    <div class="el" data-x="50"> <i class="devicon-html5-plain colored"></i></div>
-                                    <div class="el" data-x="80"><i class="devicon-css3-plain colored"></i></div>
-                                    <div class="el" data-x="120"><i class="devicon-javascript-plain colored"></i></div>
-                                    <!-- Añade más logos según sea necesario -->
+
+                                <div class="tech-logos-container property-keyframes-demo d-none" data-project="projectCSharp">
+                                    <div class="el" data-x="50"><i class="devicon-csharp-plain colored"></i></div>
+                                    <div class="el" data-x="90"><i class="devicon-dot-net-plain-wordmark colored"></i></div>
+                                    <div class="el" data-x="130"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
                                 </div>
-                                <p class="card-text" data-lang-key="project1_desc">Aplicación web de calculadora
-                                    desarrollada con HTML, CSS y
-                                    JavaScript. Ofrece operaciones básicas y una interfaz intuitiva.</p>
-                                <!-- Botón para abrir el modal -->
+
+                                <p class="card-text" data-lang-key="projectCSharp_desc">
+                                    Aplicación de escritorio corporativa desarrollada con arquitectura de 3 capas,
+                                    WinForms y SQL Server para gestión robusta de datos.
+                                </p>
+
                                 <div class="mt-2">
-                                    <a href="https://github.com/LuisGuillen-06/Calculadora"
-                                        class="btn btn-outline-info mr-5" target="_blank">
-                                        <i class="fa-solid fa-code-branch fa-lg"></i>
-                                    </a>
-                                    <a href="https://luisguillen-06.github.io/Calculadora/"
-                                        class="btn btn-outline-success" target="_blank">
-                                        <i class="fas fa-external-link-alt fa-lg"></i>
+                                    <a href="https://github.com/LuisGuillen-06/CRUD_Gestor_de_Empleados"
+                                        class="btn btn-outline-info btn-block" target="_blank">
+                                        <i class="fa-solid fa-code-branch fa-lg"></i> <span data-lang-key="btn_view_code">Ver Código</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Modal para Proyecto 1 -->
-                    <div class="modal fade" id="proyecto1Modal" tabindex="-1" aria-labelledby="proyecto1ModalLabel"
+                    <div class="modal fade" id="proyectoCSharpModal" tabindex="-1" aria-labelledby="proyectoCSharpModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="proyecto1ModalLabel" data-lang-key="project1_title">
-                                        Calculadora Básica</h5>
+                                    <h5 class="modal-title" id="proyectoCSharpModalLabel" data-lang-key="projectCSharp_modal_title">
+                                        Gestor de Empleados - Arquitectura N-Capas
+                                    </h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body descripcion">
-                                    <p class="textModal"><strong data-lang-key="label_desc">Descripción:</strong> <span
-                                            data-lang-key="project1_modal_desc">Esta calculadora básica permite
-                                            realizar operaciones matemáticas fundamentales como suma, resta,
-                                            multiplicación
-                                            y división. Ha sido desarrollada utilizando HTML para la estructura, CSS
-                                            para el
-                                            estilo, y JavaScript para la funcionalidad.</span></p>
-                                    <p class="textModal"><strong data-lang-key="label_obj">Objetivos:</strong> <span
-                                            data-lang-key="project1_modal_obj">Proporcionar una herramienta
-                                            sencilla para realizar cálculos básicos en una interfaz amigable y
-                                            accesible.</span>
+                                    <p class="textModal">
+                                        <strong data-lang-key="label_desc">Descripción:</strong>
+                                        <span data-lang-key="projectCSharp_modal_desc">
+                                            Sistema de gestión de empleados diseñado bajo una arquitectura estricta de 3 capas
+                                            (Presentación, Negocio, Datos). Utiliza Windows Forms para la interfaz y ADO.NET
+                                            para la comunicación optimizada con SQL Server.
+                                        </span>
                                     </p>
-                                    <p class="textModal"><strong data-lang-key="label_tech">Tecnologías
-                                            Utilizadas:</strong> HTML, CSS, JavaScript.
+
+                                    <p class="textModal">
+                                        <strong data-lang-key="label_obj">Objetivos:</strong>
+                                        <span data-lang-key="projectCSharp_modal_obj">
+                                            Demostrar la capacidad de crear software escalable y mantenible, desacoplando la lógica
+                                            de negocio de la interfaz y garantizando la integridad de datos mediante transacciones.
+                                        </span>
                                     </p>
-                                    <p class="textModal"><strong
-                                            data-lang-key="label_features">Características:</strong>
-                                    <ul>
-                                        <li data-lang-key="project1_feat_1">Interfaz intuitiva y fácil de usar.</li>
-                                        <li data-lang-key="project1_feat_2">Soporte para operaciones matemáticas
-                                            básicas.</li>
-                                        <li data-lang-key="project1_feat_3">Diseño responsivo para adaptarse a
-                                            diferentes dispositivos.</li>
-                                    </ul>
+
+                                    <p class="textModal">
+                                        <strong data-lang-key="label_tech">Tecnologías Utilizadas:</strong>
+                                        <span data-lang-key="projectCSharp_modal_tech_list">C# .NET Framework, Windows Forms, SQL Server (Stored Procedures), ADO.NET.</span>
                                     </p>
-                                    <p class="textModal"><strong data-lang-key="label_challenges">Desafíos:</strong>
-                                        <span data-lang-key="project1_modal_challenges">Asegurar que la interfaz sea
-                                            clara y
-                                            funcional en dispositivos de diferentes tamaños y solucionar problemas de
-                                            redondeo en los cálculos.</span>
+
+                                    <div class="textModal">
+                                        <strong data-lang-key="label_features">Características:</strong>
+                                        <ul>
+                                            <li data-lang-key="projectCSharp_feat_1">CRUD Completo con validaciones de negocio.</li>
+                                            <li data-lang-key="projectCSharp_feat_2">Uso de Stored Procedures para seguridad y performance.</li>
+                                            <li data-lang-key="projectCSharp_feat_3">Implementación del patrón Repository.</li>
+                                            <li data-lang-key="projectCSharp_feat_4">Gestión correcta de memoria (uso de <code>using</code>).</li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="textModal">
+                                        <strong data-lang-key="label_challenges">Desafíos:</strong>
+                                        <span data-lang-key="projectCSharp_modal_challenges">
+                                            Implementar correctamente la separación de responsabilidades entre capas sin generar
+                                            dependencias circulares y asegurar que las conexiones a base de datos se cierren
+                                            automáticamente tras cada operación.
+                                        </span>
                                     </p>
                                 </div>
                                 <div class="modal-footer">
@@ -267,6 +276,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Segunda tarjeta -->
                     <div class="col-md-6 mb-4 text-center">
                         <div class="card">

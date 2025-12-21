@@ -49,20 +49,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Inicializar animaciones de tecnologías para todos los proyectos
-    ['project1', 'project2', 'project3', 'project4'].forEach(project => {
+    ['projectCSharp', 'project2', 'project3', 'project4'].forEach(project => {
         startAnimation(project);
     });
 
-    // Validación de formulario de contacto
     initContactForm();
 
-    // Idioma
     initLanguage();
 
-    // Tema
     initTheme();
 
-    // Spotlight Effect (Premium Interaction)
     const spotlightCards = document.querySelectorAll('.skill-category-card, #proyectos .card');
 
     spotlightCards.forEach(card => {
@@ -150,14 +146,19 @@ const translations = {
         label_features: "Características:",
         label_challenges: "Desafíos:",
 
-        project1_title: "Calculadora Básica",
-        project1_desc: "Aplicación web de calculadora desarrollada con HTML, CSS y JavaScript. Ofrece operaciones básicas y una interfaz intuitiva.",
-        project1_modal_desc: "Esta calculadora básica permite realizar operaciones matemáticas fundamentales como suma, resta, multiplicación y división.",
-        project1_modal_obj: "Proporcionar una herramienta sencilla para realizar cálculos básicos.",
-        project1_feat_1: "Interfaz intuitiva y fácil de usar.",
-        project1_feat_2: "Soporte para operaciones matemáticas básicas.",
-        project1_feat_3: "Diseño responsivo.",
-        project1_modal_challenges: "Asegurar que la interfaz sea clara y funcional en diferentes dispositivos.",
+        btn_view_code: "Ver Código",
+        projectCSharp_modal_title: "Gestor de Empleados - Arquitectura N-Capas",
+        projectCSharp_modal_tech_list: "C# .NET Framework, Windows Forms, SQL Server (Stored Procedures), ADO.NET.",
+        projectCSharp_feat_4: "Gestión correcta de memoria (uso de using).",
+
+        projectCSharp_title: "Gestor de Empleados N-Capas",
+        projectCSharp_desc: "Aplicación de escritorio corporativa desarrollada con arquitectura de 3 capas, WinForms y SQL Server.",
+        projectCSharp_modal_desc: "Sistema de gestión de empleados diseñado bajo una arquitectura estricta de 3 capas (Presentación, Negocio, Datos). Utiliza Windows Forms y ADO.NET.",
+        projectCSharp_modal_obj: "Demostrar la capacidad de crear software escalable y mantenible, desacoplando la lógica de negocio.",
+        projectCSharp_feat_1: "CRUD Completo con validaciones.",
+        projectCSharp_feat_2: "Uso de Stored Procedures (SQL Server).",
+        projectCSharp_feat_3: "Arquitectura limpia N-Capas.",
+        projectCSharp_modal_challenges: "Implementar correctamente la separación de responsabilidades y la gestión de memoria.",
 
         project2_title: "Clima en Tu Lugar",
         project2_desc: "Aplicación web que brinda información sobre el clima actual en tu ubicación.",
@@ -212,14 +213,18 @@ const translations = {
         label_features: "Features:",
         label_challenges: "Challenges:",
 
-        project1_title: "Basic Calculator",
-        project1_desc: "Web calculator application developed with HTML, CSS, and JavaScript. Offers basic operations and an intuitive interface.",
-        project1_modal_desc: "This basic calculator allows performing fundamental mathematical operations such as addition, subtraction, multiplication, and division.",
-        project1_modal_obj: "Provide a simple tool for basic calculations.",
-        project1_feat_1: "Intuitive and easy-to-use interface.",
-        project1_feat_2: "Support for basic mathematical operations.",
-        project1_feat_3: "Responsive design.",
-        project1_modal_challenges: "Ensuring the interface is clear and functional across different devices.",
+        btn_view_code: "View Code",
+        projectCSharp_modal_title: "Employee Manager - N-Tier Architecture",
+        projectCSharp_modal_tech_list: "C# .NET Framework, Windows Forms, SQL Server (Stored Procedures), ADO.NET.",
+        projectCSharp_feat_4: "Correct memory management (using statements).",
+        projectCSharp_title: "Employee Manager N-Tier",
+        projectCSharp_desc: "Corporate desktop application developed with 3-tier architecture, WinForms, and SQL Server.",
+        projectCSharp_modal_desc: "Employee management system designed under a strict 3-tier architecture (Presentation, Business, Data). Uses Windows Forms and ADO.NET.",
+        projectCSharp_modal_obj: "Demonstrate the ability to create scalable and maintainable software by decoupling business logic.",
+        projectCSharp_feat_1: "Full CRUD with validations.",
+        projectCSharp_feat_2: "Use of Stored Procedures (SQL Server).",
+        projectCSharp_feat_3: "Clean N-Tier Architecture.",
+        projectCSharp_modal_challenges: "Correctly implementing separation of concerns and memory management.",
 
         project2_title: "Weather in Your Location",
         project2_desc: "Web application that provides real-time weather information for your location.",
