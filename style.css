@@ -367,6 +367,30 @@ a {
     color: var(--primary);
 }
 
+/* Education Section Specific Styles */
+.progress {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+    border-radius: 10px;
+}
+
+body.light-mode .progress {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .progress-bar.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+body.light-mode .progress-bar.bg-success {
+    background-color: #198754 !important;
+}
+
 /* Projects Section */
 .card {
     background: rgba(15, 23, 42, 0.6);
