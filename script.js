@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Aplicar traducciones iniciales
     updateTexts('es');
 
+    // Inicializar Scroll to Top
+    initScrollToTop();
+
     const spotlightCards = document.querySelectorAll('.skill-category-card, #proyectos .card');
 
     spotlightCards.forEach(card => {
@@ -505,5 +508,27 @@ function initContactForm() {
         if (!valid) {
             event.preventDefault();
         }
+    });
+}
+
+// Función para inicializar Scroll to Top
+function initScrollToTop() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+    
+    // Scroll suave al hacer click
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 }

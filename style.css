@@ -575,6 +575,65 @@ footer {
     padding: 2rem 0;
 }
 
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+.scroll-to-top:active {
+    transform: translateY(-1px);
+}
+
+/* Light Mode Scroll Button */
+body.light-mode .scroll-to-top {
+    background: #0d6efd;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+}
+
+body.light-mode .scroll-to-top:hover {
+    background: #0b5ed7;
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.6);
+}
+
+/* Responsive Scroll to Top */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1rem;
+    }
+}
+
 footer p {
     color: var(--text-muted);
     font-size: 0.9rem;
@@ -872,13 +931,21 @@ body.light-mode .navbar {
 
 /* Footer Light Mode */
 body.light-mode footer {
-    background: #f1f5f9 !important;
+    background: #f8f9fa !important;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     margin-top: 4rem;
 }
 
 body.light-mode footer p {
-    color: #64748b !important;
+    color: #495057 !important;
+}
+
+body.light-mode .footer-icon {
+    color: #495057;
+}
+
+body.light-mode .footer-icon:hover {
+    color: var(--primary);
 }
 
 /* Forms Light Mode */
@@ -1109,16 +1176,7 @@ body.light-mode .form-control::placeholder {
     color: #6c757d;
 }
 
-/* Footer Light Mode */
-body.light-mode footer {
-    background: #e9ecef;
-    color: #212529;
-    border-top: 1px solid #dee2e6;
-}
 
-body.light-mode footer p {
-    color: #212529 !important;
-}
 
 /* Social Links in Light Mode */
 /* Social Links in Light Mode */
