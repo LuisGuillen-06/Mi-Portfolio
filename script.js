@@ -65,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializar Scroll to Top
     initScrollToTop();
 
+    // Inicializar auto-cerrar navbar en móviles
+    initMobileNavbar();
+
     const spotlightCards = document.querySelectorAll('.skill-category-card, #proyectos .card');
 
     spotlightCards.forEach(card => {
@@ -530,5 +533,33 @@ function initScrollToTop() {
             top: 0,
             behavior: 'smooth'
         });
+    });
+}
+
+// Función para mejorar UX del navbar móvil
+function initMobileNavbar() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Auto-cerrar navbar cuando se hace click en un link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Solo en móviles (cuando el toggler es visible)
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                // Cerrar el navbar usando Bootstrap
+                $(navbarCollapse).collapse('hide');
+            }
+        });
+    });
+    
+    // Cerrar navbar al hacer click fuera (opcional)
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+        const isNavOpen = navbarCollapse.classList.contains('show');
+        
+        if (!isClickInsideNav && isNavOpen && window.getComputedStyle(navbarToggler).display !== 'none') {
+            $(navbarCollapse).collapse('hide');
+        }
     });
 }
