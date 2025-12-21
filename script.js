@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initTheme();
 
+    // Aplicar traducciones iniciales
+    updateTexts('es');
+
     const spotlightCards = document.querySelectorAll('.skill-category-card, #proyectos .card');
 
     spotlightCards.forEach(card => {
@@ -119,10 +122,14 @@ const translations = {
         about_story_title: "Perfil Profesional",
         about_story_text: "Analista de Sistemas y estudiante avanzado de Ingeniería (5to año). Cuento con sólida experiencia en QA técnico, desarrollando una mentalidad orientada a la calidad. Mi objetivo es transicionar al rol de Desarrollador .NET/C#, aplicando conocimientos en POO, SQL y arquitectura.",
         about_exp_title: "Experiencia Profesional",
-        about_exp_role: "QA Analyst @ Epidata",
-        about_exp_desc: "Diseño y ejecución de casos de prueba integrales para aplicativos bancarios. Validación de servicios SoapUI, consultas SQL y reporte de bugs (Jira/Trello).",
+        about_exp_role_current: "QA Analyst @ Epidata",
+        about_exp_dates_current: "Jul 2025 - Actualidad",
+        about_exp_desc_current: "Detecté 25+ bugs críticos en aplicativos bancarios antes de producción. Optimicé casos de prueba reduciendo tiempo de testing 30%.",
+        about_exp_role_freelance: "QA Tester Freelance",
+        about_exp_dates_freelance: "Sep 2024 - Jul 2025",
+        about_exp_desc_freelance: "Colaboración directa con desarrollo en eventos.com.ar. Prevención de deuda técnica y validación de reglas críticas de negocio.",
         about_tech_title: "Tecnologías",
-        about_tech_desc: "C# / .NET, ASP.NET, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Enfoque en soluciones robustas y escalables.",
+        about_tech_desc: "C# / .NET, ASP.NET WebForms, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Metodologías: Scrum, Agile.",
         // Formación Académica
         education_title: "Formación Académica <span class=\"text-primary\">.</span>",
         education_engineering_title: "Ingeniería en Sistemas Informáticos",
@@ -141,6 +148,9 @@ const translations = {
         frontend_title: "<i class=\"fas fa-laptop-code text-accent mr-2\"></i> Frontend",
         contact_title: "Contáctame <span class=\"text-primary\">.</span>",
         contact_intro_text: "¿Tienes alguna propuesta o quieres charlar sobre tecnología? No dudes en contactarme. Estoy abierto a nuevas oportunidades.",
+        contact_email_label: "Email",
+        contact_phone_label: "Teléfono",
+        contact_location_label: "Ubicación",
         contact_label_name: "Nombre",
         contact_ph_name: "Tu nombre",
         contact_label_email: "Correo electrónico",
@@ -148,6 +158,8 @@ const translations = {
         contact_label_msg: "Mensaje",
         contact_ph_msg: "Escribe tu mensaje aquí...",
         contact_btn_submit: "Enviar Mensaje",
+        contact_language_label: "Idiomas",
+        contact_language_value: "Inglés B1 (Intermedio)",
         footer_rights: "Luis Felipe Guillén Márquez",
         // Proyectos
         btn_details: "Ver Detalles",
@@ -180,7 +192,45 @@ const translations = {
         project3_desc: "Proyecto colaborativo para crear un blog sobre la localidad El Tigre, destacando su historia y lugares de interés.",
 
         project4_title: "PetZone - Tienda de Mascotas",
-        project4_desc: "Proyecto de tienda de mascotas con frontend y backend. Utiliza Python, Flask y MySQL para el ABM de productos."
+        project4_desc: "Proyecto de tienda de mascotas con frontend y backend. Utiliza Python, Flask y MySQL para el ABM de productos.",
+        
+        // Modales de Proyectos
+        project2_modal_title: "Clima en tu Lugar",
+        project2_modal_desc: "Esta aplicación simple te brinda información sobre el clima actual en tu ubicación, mostrando la temperatura, presión atmosférica, humedad relativa y una descripción del clima actual.",
+        project2_modal_features_label: "Funcionalidades:",
+        project2_feat_1: "Muestra la temperatura actual.",
+        project2_feat_2: "Muestra la presión atmosférica.",
+        project2_feat_3: "Muestra la humedad relativa.",
+        project2_feat_4: "Proporciona una descripción del clima actual.",
+        project2_modal_requirements_label: "Requisitos:",
+        project2_req_1: "Conexión a Internet para obtener los datos del clima.",
+        project2_req_2: "Permiso del navegador para acceder a la ubicación del usuario.",
+        project2_modal_api_label: "API Utilizada:",
+        project2_modal_api_desc: "La aplicación utiliza la API de OpenWeatherMap para obtener la información del clima.",
+        project2_modal_tech_list: "HTML, CSS, JavaScript.",
+
+        project3_modal_title: "Blog de la localidad El Tigre",
+        project3_modal_desc: "Proyecto colaborativo que destaca la historia, cultura y lugares de interés de esta región. El objetivo es proporcionar a los residentes y visitantes una fuente de información detallada y atractiva sobre la localidad.",
+        project3_modal_obj: "Crear una plataforma informativa sobre El Tigre. Promover el turismo y el conocimiento cultural de la región. Ofrecer información histórica y actualizada sobre eventos y lugares de interés.",
+        project3_feat_1: "Secciones dedicadas a la historia, cultura y eventos de El Tigre.",
+        project3_feat_2: "Galería de imágenes de lugares destacados de la localidad.",
+        project3_feat_3: "Integración de videos y contenido multimedia para una experiencia enriquecedora.",
+        project3_modal_participation_label: "Participación:",
+        project3_modal_participation_desc: "Este proyecto fue desarrollado en colaboración con dos compañeras, quienes contribuyeron significativamente en la recopilación de información, desarrollo de contenido y diseño del blog.",
+        project3_modal_tech_list: "HTML, CSS, JavaScript y Bootstrap",
+
+        project4_modal_title: "PetZone - Tienda de Mascotas",
+        project4_modal_desc: "Proyecto colaborativo de tienda de mascotas realizado en el curso \"Codo a Codo\". Incluye desarrollo frontend y backend utilizando Python con Flask y MySQL para gestionar el ABM de productos.",
+        project4_obj_1: "Crear una plataforma de gestión de productos para una tienda de mascotas.",
+        project4_obj_2: "Facilitar la administración y actualización de inventarios.",
+        project4_obj_3: "Proporcionar una interfaz amigable para los usuarios.",
+        project4_feat_1: "Gestión de productos (alta, baja, modificación).",
+        project4_feat_2: "Integración con base de datos MySQL.",
+        project4_feat_3: "Diseño responsivo con Bootstrap.",
+        project4_feat_4: "Interfaz intuitiva para facilitar la navegación y administración.",
+        project4_modal_participation_label: "Participación:",
+        project4_modal_participation_desc: "Este proyecto fue desarrollado en colaboración con dos compañeras en el curso \"Codo a Codo\", quienes contribuyeron significativamente en la implementación de funcionalidades y el diseño del sistema.",
+        project4_modal_tech_list: "HTML, CSS, JavaScript, Bootstrap, Python, Flask, MySQL."
     },
     en: {
         nav_cv: "Resume",
@@ -199,10 +249,14 @@ const translations = {
         about_story_text: "Systems Analyst and Advanced Engineering Student (5th year). I have solid experience in Technical QA, developing a quality-oriented mindset. My goal is to transition to a .NET/C# Developer role, applying OOP, SQL, and architecture knowledge.",
         projects_titles: "My Projects",
         about_exp_title: "Professional Experience",
-        about_exp_role: "QA Analyst @ Epidata",
-        about_exp_desc: "Design and execution of integral test cases for banking applications. SoapUI service validation, SQL queries, and bug reporting (Jira/Trello).",
+        about_exp_role_current: "QA Analyst @ Epidata",
+        about_exp_dates_current: "Jul 2025 - Present",
+        about_exp_desc_current: "Detected 25+ critical bugs in banking applications before production. Optimized test cases reducing testing time by 30%.",
+        about_exp_role_freelance: "QA Tester Freelance",
+        about_exp_dates_freelance: "Sep 2024 - Jul 2025",
+        about_exp_desc_freelance: "Direct collaboration with development at eventos.com.ar. Technical debt prevention and critical business rules validation.",
         about_tech_title: "Technologies",
-        about_tech_desc: "C# / .NET, ASP.NET, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Focus on robust and scalable solutions.",
+        about_tech_desc: "C# / .NET, ASP.NET WebForms, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Methodologies: Scrum, Agile.",
         // Education
         education_title: "Academic Background <span class=\"text-primary\">.</span>",
         education_engineering_title: "Computer Systems Engineering",
@@ -221,6 +275,9 @@ const translations = {
         frontend_title: "<i class=\"fas fa-laptop-code text-accent mr-2\"></i> Frontend",
         contact_title: "Contact Me <span class=\"text-primary\">.</span>",
         contact_intro_text: "Do you have a proposal or want to chat about technology? Feel free to contact me. I am open to new opportunities.",
+        contact_email_label: "Email",
+        contact_phone_label: "Phone",
+        contact_location_label: "Location",
         contact_label_name: "Name",
         contact_ph_name: "Your Name",
         contact_label_email: "Email",
@@ -228,6 +285,8 @@ const translations = {
         contact_label_msg: "Message",
         contact_ph_msg: "Write your message here...",
         contact_btn_submit: "Send Message",
+        contact_language_label: "Languages",
+        contact_language_value: "English B1 (Intermediate)",
         footer_rights: "Luis Felipe Guillén Márquez",
         // Projects
         btn_details: "View Details",
@@ -259,7 +318,45 @@ const translations = {
         project3_desc: "Collaborative project to create a blog about the El Tigre locality, highlighting its history and places of interest.",
 
         project4_title: "PetZone - Pet Shop",
-        project4_desc: "Pet shop project with frontend and backend. Uses Python, Flask, and MySQL for product management."
+        project4_desc: "Pet shop project with frontend and backend. Uses Python, Flask, and MySQL for product management.",
+        
+        // Project Modals
+        project2_modal_title: "Weather in Your Location",
+        project2_modal_desc: "This simple application provides you with information about the current weather in your location, showing temperature, atmospheric pressure, relative humidity, and a description of the current weather.",
+        project2_modal_features_label: "Features:",
+        project2_feat_1: "Displays current temperature.",
+        project2_feat_2: "Shows atmospheric pressure.",
+        project2_feat_3: "Displays relative humidity.",
+        project2_feat_4: "Provides a description of the current weather.",
+        project2_modal_requirements_label: "Requirements:",
+        project2_req_1: "Internet connection to obtain weather data.",
+        project2_req_2: "Browser permission to access user location.",
+        project2_modal_api_label: "API Used:",
+        project2_modal_api_desc: "The application uses the OpenWeatherMap API to obtain weather information.",
+        project2_modal_tech_list: "HTML, CSS, JavaScript.",
+
+        project3_modal_title: "El Tigre Locality Blog",
+        project3_modal_desc: "Collaborative project that highlights the history, culture, and places of interest in this region. The goal is to provide residents and visitors with a detailed and attractive source of information about the locality.",
+        project3_modal_obj: "Create an informative platform about El Tigre. Promote tourism and cultural knowledge of the region. Offer historical and updated information about events and places of interest.",
+        project3_feat_1: "Sections dedicated to the history, culture, and events of El Tigre.",
+        project3_feat_2: "Image gallery of prominent places in the locality.",
+        project3_feat_3: "Integration of videos and multimedia content for an enriching experience.",
+        project3_modal_participation_label: "Participation:",
+        project3_modal_participation_desc: "This project was developed in collaboration with two colleagues, who contributed significantly to the collection of information, content development, and blog design.",
+        project3_modal_tech_list: "HTML, CSS, JavaScript, and Bootstrap",
+
+        project4_modal_title: "PetZone - Pet Shop",
+        project4_modal_desc: "Collaborative pet shop project carried out in the \"Codo a Codo\" course. Includes frontend and backend development using Python with Flask and MySQL to manage product CRUD operations.",
+        project4_obj_1: "Create a product management platform for a pet shop.",
+        project4_obj_2: "Facilitate inventory administration and updates.",
+        project4_obj_3: "Provide a user-friendly interface.",
+        project4_feat_1: "Product management (create, delete, modify).",
+        project4_feat_2: "Integration with MySQL database.",
+        project4_feat_3: "Responsive design with Bootstrap.",
+        project4_feat_4: "Intuitive interface to facilitate navigation and administration.",
+        project4_modal_participation_label: "Participation:",
+        project4_modal_participation_desc: "This project was developed in collaboration with two colleagues in the \"Codo a Codo\" course, who contributed significantly to the implementation of functionalities and system design.",
+        project4_modal_tech_list: "HTML, CSS, JavaScript, Bootstrap, Python, Flask, MySQL."
     }
 };
 
