@@ -133,7 +133,7 @@ const translations = {
         about_exp_desc_current: "Detecté 25+ bugs críticos en aplicativos bancarios antes de producción. Optimicé casos de prueba reduciendo tiempo de testing 30%.",
         about_exp_role_freelance: "QA Tester Freelance",
         about_exp_dates_freelance: "Sep 2024 - Jul 2025",
-        about_exp_desc_freelance: "Colaboración directa con desarrollo en eventos.com.ar. Prevención de deuda técnica y validación de reglas críticas de negocio.",
+        about_exp_desc_freelance: "Colaboración directa con desarrollo en <strong>evemtos.com.ar</strong>. Prevención de deuda técnica y validación de reglas críticas de negocio.",
         about_tech_title: "Tecnologías",
         about_tech_desc: "C# / .NET, ASP.NET WebForms, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Metodologías: Scrum, Agile.",
         // Formación Académica
@@ -260,7 +260,7 @@ const translations = {
         about_exp_desc_current: "Detected 25+ critical bugs in banking applications before production. Optimized test cases reducing testing time by 30%.",
         about_exp_role_freelance: "QA Tester Freelance",
         about_exp_dates_freelance: "Sep 2024 - Jul 2025",
-        about_exp_desc_freelance: "Direct collaboration with development at eventos.com.ar. Technical debt prevention and critical business rules validation.",
+        about_exp_desc_freelance: "Direct collaboration with development at <strong>evemtos.com.ar</strong>. Technical debt prevention and critical business rules validation.",
         about_tech_title: "Technologies",
         about_tech_desc: "C# / .NET, ASP.NET WebForms, Python (Flask), SQL Server, MySQL, SoapUI, Postman, Jira, Git. Methodologies: Scrum, Agile.",
         // Education
